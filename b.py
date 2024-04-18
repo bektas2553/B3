@@ -5,7 +5,7 @@ server = "irc.kardelenfm.net"
 port = 6667
 link_part = "http://78.135.111.124:2138/"
 
-socks.set_default_proxy(socks.SOCKS5, '162.55.87.48', 5566)
+socks.set_default_proxy(socks.SOCKS5, '194.26.229.46', 20001)
 socket.socket = socks.socksocket  # Yeni bir socket oluşturulduğunda SOCKS5 proxy kullanılacak
 
 irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
