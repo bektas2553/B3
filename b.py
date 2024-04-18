@@ -5,7 +5,7 @@ server = "irc.kardelenfm.net"
 port = 6667
 nickname = "Bott"
 
-socks.set_default_proxy(socks.SOCKS5, "localhost", 1080)  # SOCKS5 proxy bilgilerini ayarlayın
+socks.set_default_proxy(socks.SOCKS5, "162.55.87.48", 5566)  # SOCKS5 proxy bilgilerini ayarlayın
 socket.socket = socks.socksocket  # Yeni bir socket oluşturulduğunda SOCKS5 proxy kullanılacak
 
 irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
