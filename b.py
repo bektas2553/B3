@@ -12,7 +12,7 @@ irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 irc.connect((server, port))
 
 while True:
-    data = irc.recv(4096).decode()
+    data = irc.recv(4096).decode(encoding='ISO-8859-9')
     print(data)
     if link_part in data:
         index = data.find(link_part) + len(link_part)
